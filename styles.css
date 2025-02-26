@@ -30,7 +30,7 @@ h1 {
 /* Hero Section */
 .hero {
     position: relative;
-    background: url('./img/buddha-statue-with-nature-landscape.jpg') no-repeat center center;
+    background: url('buddha-statue-with-nature-landscape.jpg') no-repeat center center;
     background-size: cover;  /* ปรับภาพให้เต็มพื้นที่ */
     background-position: center;
     background-attachment: fixed; /* ทำให้พื้นหลังอยู่กับที่ขณะเลื่อน */
