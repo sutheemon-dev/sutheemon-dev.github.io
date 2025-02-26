@@ -1,0 +1,64 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.modal-body img {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('./img/buddha-statue-with-nature-landscape.jpg') no-repeat center center;
+    background-size: cover;  /* ปรับภาพให้เต็มพื้นที่ */
+    background-position: center;
+    background-attachment: fixed; /* ทำให้พื้นหลังอยู่กับที่ขณะเลื่อน */
+    width: 100%;
+    height: 100vh;  /* ปรับให้ Hero Section สูงเต็มจอ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* เพิ่มเงาโปร่งแสงเพื่อให้ตัวหนังสืออ่านง่ายขึ้น */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* เงาดำโปร่งแสง 40% */
+}
+
+/* จัดข้อความให้อยู่ข้างหน้า */
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.custom-text {
+    color: rgba(200, 200, 200, 0.8); /* สีเทาอ่อนโปร่งใส */
+    padding: 10px;
+    margin-bottom: 200px; /* ห่างจากด้านล่าง 200px */
+}
