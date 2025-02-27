@@ -233,5 +233,11 @@ document.addEventListener("DOMContentLoaded", function () {
             section.scrollIntoView({ behavior: "smooth" });
         }
     }
-
 });
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector('a[href="#ifrem-youtube"]').addEventListener("click", function (event) {
+        event.preventDefault(); // ป้องกันพฤติกรรมเริ่มต้น
+        document.querySelector("#ifrem-youtube").scrollIntoView({ behavior: "smooth" });
+    });
+});
+
